@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ScrabbleScoreController {
-
     @RequestMapping("/score")
     public ScrabbleScore score(@RequestParam(value="word", required=true) String word) {
         return new ScrabbleScore(word);
